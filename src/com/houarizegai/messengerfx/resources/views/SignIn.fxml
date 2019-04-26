@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.messengerfx.java.controllers.SignInController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="400.0" spacing="40.0">
+         <children>
+            <ImageView fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/icon_app.png" />
+               </image>
+            </ImageView>
+            <VBox maxWidth="-Infinity" spacing="10.0">
+               <children>
+                  <Label styleClass="title" text="Welcome to Messenger" wrapText="true" />
+                  <Label prefWidth="238.0" styleClass="sub-title" text="What number can people use to reach you?" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox maxWidth="-Infinity" spacing="25.0">
+               <children>
+                  <JFXTextField fx:id="fieldEmailPhone" maxHeight="-Infinity" maxWidth="-Infinity" promptText="Email or phone" styleClass="field" />
+                  <JFXPasswordField fx:id="fieldPassword" promptText="Password" styleClass="field" />
+               </children>
+            </VBox>
+            <JFXButton onAction="#onSignIn" styleClass="btn-continue" text="SIGN IN WITH FACEBOOK">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></JFXButton>
+            <Hyperlink onAction="#onForgotPassword" styleClass="link-forgot" text="FORGOT PASSWORD?" />
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+      <JFXButton contentDisplay="TOP" graphicTextGap="0.0" onAction="#onBack" text="Back" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <MaterialDesignIconView glyphName="ARROW_LEFT" size="20" />
+         </graphic>
+         <StackPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </StackPane.margin>
+      </JFXButton>
+      <JFXButton onAction="#onNotOnFacebook" styleClass="btn-not-on-fb" text="NOT ON FACEBOOK?" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="5.0" />
+         </StackPane.margin>
+      </JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/material-color.css" />
+      <URL value="@../css/sign-in.css" />
+   </stylesheets>
+</StackPane>
