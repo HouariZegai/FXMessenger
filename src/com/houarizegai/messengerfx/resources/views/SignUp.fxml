@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.messengerfx.java.controllers.SignUpController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="400.0" spacing="40.0">
+         <children>
+            <ImageView fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/icon_app.png" />
+               </image>
+            </ImageView>
+            <VBox maxWidth="-Infinity" spacing="10.0">
+               <children>
+                  <Label styleClass="title" text="Welcome to Messenger" wrapText="true" />
+                  <Label prefWidth="238.0" styleClass="sub-title" text="What number can people use to reach you?" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <JFXTextField fx:id="fieldPhone" maxHeight="-Infinity" maxWidth="-Infinity" promptText="Phone number" styleClass="field" />
+            <JFXButton onAction="#onContinue" styleClass="btn-continue" text="CONTINUE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <TextFlow maxWidth="-Infinity" prefWidth="280.0" textAlignment="CENTER">
+               <children>
+                  <Label styleClass="footer-txt" text="By continuing, you are indicating that you" wrapText="true" />
+                  <Label styleClass="footer-txt" text="agree to the" wrapText="true" />
+                  <Hyperlink onAction="#onPrivacyPolicy" styleClass="footer-link" text="Privacy policy" />
+                  <Label styleClass="footer-txt" text="and" wrapText="true" />
+                  <Hyperlink onAction="#onTerms" styleClass="footer-link" text="Terms." />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextFlow>
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+      <JFXButton contentDisplay="TOP" graphicTextGap="0.0" onAction="#onBack" text="Back" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <MaterialDesignIconView glyphName="ARROW_LEFT" size="20" />
+         </graphic>
+         <StackPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </StackPane.margin>
+      </JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/material-color.css" />
+      <URL value="@../css/sign-up.css" />
+   </stylesheets>
+</StackPane>

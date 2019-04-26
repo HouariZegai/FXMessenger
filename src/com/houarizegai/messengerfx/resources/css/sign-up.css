@@ -1,0 +1,38 @@
+.title {
+    -fx-font-size: 24px;
+}
+
+.sub-title {
+    -fx-font-size: 13px;
+    -fx-text-fill: #888;
+    -fx-wrap-text: true;
+}
+
+.field {
+    -fx-pref-width: 280px;
+    -fx-pref-height: 35px;
+    -jfx-unfocus-color: #777;
+    -jfx-focus-color: -base-color;
+    -fx-prompt-text-fill: #777;
+    -fx-font-size: 16px;
+    -jfx-label-float: true
+}
+
+.footer-txt {
+    -fx-font-size: 14px;
+    -fx-text-fill: #888;
+}
+
+.footer-link {
+    -fx-font-size: 14px
+}
+
+.btn-continue {
+    -fx-pref-width: 130px;
+    -fx-pref-height: 40px;
+    -fx-background-color: -base-color;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -jfx-button-type: RAISED
+}
