@@ -6,30 +6,44 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="400.0" spacing="60.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.messengerfx.java.controllers.WelcomeController">
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.messengerfx.java.controllers.WelcomeController">
    <children>
-      <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/icons/icon_app.png" />
-         </image>
-      </ImageView>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="255.0" spacing="15.0">
+      <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="400.0" spacing="60.0">
          <children>
-            <Label prefHeight="65.0" prefWidth="148.0" styleClass="title" text="Welcome to Messenger" wrapText="true" />
-            <Label styleClass="sub-title" text="Thanks for installing - let's get you set up!" textAlignment="CENTER" wrapText="true" />
+            <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/icon_app.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" maxWidth="-Infinity" prefWidth="255.0" spacing="15.0">
+               <children>
+                  <Label prefWidth="148.0" styleClass="title" text="Welcome to Messenger" wrapText="true" />
+                  <Label styleClass="sub-title" text="Thanks for installing - let's get you set up!" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </VBox>
+            <JFXButton onAction="#onContinueAs" styleClass="btn-continue" text="CONTINUE AS HOUARI ZEGAI" />
          </children>
+         <stylesheets>
+            <URL value="@../css/main.css" />
+            <URL value="@../css/material-color.css" />
+            <URL value="@../css/welcome.css" />
+         </stylesheets>
+         <padding>
+            <Insets top="70.0" />
+         </padding>
       </VBox>
-      <JFXButton buttonType="RAISED" onAction="#onContinueAs" styleClass="btn" text="CONTINUE AS HOUARI ZEGAI" />
+      <JFXButton buttonType="RAISED" onAction="#onSwitchAccount" styleClass="btn-switch-account" text="SWITCH ACCOUNT" StackPane.alignment="BOTTOM_CENTER">
+         <StackPane.margin>
+            <Insets bottom="20.0" />
+         </StackPane.margin>
+      </JFXButton>
    </children>
    <stylesheets>
       <URL value="@../css/main.css" />
       <URL value="@../css/material-color.css" />
       <URL value="@../css/welcome.css" />
    </stylesheets>
-   <padding>
-      <Insets top="70.0" />
-   </padding>
-</VBox>
+</StackPane>

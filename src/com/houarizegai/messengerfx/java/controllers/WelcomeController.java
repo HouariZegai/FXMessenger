@@ -8,4 +8,9 @@ public class WelcomeController {
     private void onContinueAs() {
         System.out.println("Hello Houari ZEGAI!");
     }
+
+    @FXML
+    private void onSwitchAccount() {
+        System.out.println("Switch Account !");
+    }
 }

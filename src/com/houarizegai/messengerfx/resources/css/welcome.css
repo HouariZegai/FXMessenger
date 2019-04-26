@@ -7,11 +7,19 @@
     -fx-text-fill: #888;
 }
 
-.btn {
+.btn-continue {
     -fx-pref-width: 280px;
     -fx-pref-height: 48px;
     -fx-background-color: -base-color;
     -fx-text-fill: #FFF;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
+    -jfx-button-type: RAISED
+}
+
+.btn-switch-account {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: #666;
+    -fx-font-size: 15px
 }
