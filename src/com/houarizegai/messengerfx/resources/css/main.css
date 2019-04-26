@@ -2,6 +2,10 @@
     -fx-font-family: Arial;
 }
 
+.root {
+    -fx-background-color: #FFF;
+}
+
 JFXButton, JFXRadioButton {
     -fx-cursor: hand
 }
