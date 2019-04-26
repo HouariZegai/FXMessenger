@@ -26,11 +26,6 @@
             </VBox>
             <JFXButton onAction="#onContinueAs" styleClass="btn-continue" text="CONTINUE AS HOUARI ZEGAI" />
          </children>
-         <stylesheets>
-            <URL value="@../css/main.css" />
-            <URL value="@../css/material-color.css" />
-            <URL value="@../css/welcome.css" />
-         </stylesheets>
          <padding>
             <Insets top="70.0" />
          </padding>

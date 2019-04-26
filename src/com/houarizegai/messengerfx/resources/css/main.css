@@ -2,6 +2,6 @@
     -fx-font-family: Arial;
 }
 
-Button, JFXButton {
+JFXButton, JFXRadioButton {
     -fx-cursor: hand
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.messengerfx.java.controllers.SwitchAccountController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="400.0" spacing="40.0">
+         <children>
+            <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/icon_app.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="title" text="Welcome to Messenger" wrapText="true" />
+            <VBox maxWidth="-Infinity" spacing="20.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <JFXRadioButton fx:id="radioHaveAccount" styleClass="radio-btn" text="I have a Facebook account">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tglGrpSwitchAccount" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <Label styleClass="radio-btn-desc" text="You can use all your Facebook friends with Messenger.">
+                           <VBox.margin>
+                              <Insets left="45.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0">
+                     <children>
+                        <JFXRadioButton fx:id="radioDoNotHaveAccount" styleClass="radio-btn" text="I don't have a Facebook account" toggleGroup="$tglGrpSwitchAccount" />
+                        <Label styleClass="radio-btn-desc" text="You can use Messenger without Facebook.">
+                           <VBox.margin>
+                              <Insets left="45.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <JFXButton onAction="#onContinue" styleClass="btn-continue" text="CONTINUE ">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></JFXButton>
+         </children>
+         <padding>
+            <Insets top="70.0" />
+         </padding>
+      </VBox>
+      <JFXButton contentDisplay="TOP" graphicTextGap="0.0" onAction="#onBack" text="Back" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <MaterialDesignIconView glyphName="ARROW_LEFT" size="20" />
+         </graphic>
+         <StackPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </StackPane.margin>
+      </JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+      <URL value="@../css/material-color.css" />
+      <URL value="@../css/switch-account.css" />
+   </stylesheets>
+</StackPane>

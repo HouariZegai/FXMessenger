@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #FFF;
+}
+
+.title {
+    -fx-font-size: 24px;
+}
+
+.radio-btn {
+    -fx-font-size: 16px;
+}
+
+.radio-btn-desc {
+    -fx-pref-width: 150px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #888;
+    -fx-wrap-text: true;
+}
+
+.btn-continue {
+    -fx-pref-width: 130px;
+    -fx-pref-height: 48px;
+    -fx-background-color: -base-color;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -jfx-button-type: RAISED
+}
