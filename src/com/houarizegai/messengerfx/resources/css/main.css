@@ -1,0 +1,7 @@
+* {
+    -fx-font-family: Arial;
+}
+
+Button, JFXButton {
+    -fx-cursor: hand
+}
