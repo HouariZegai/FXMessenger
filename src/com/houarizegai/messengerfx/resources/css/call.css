@@ -1,0 +1,38 @@
+.header {
+    -fx-background-color: #FFF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);
+}
+
+.header-icon {
+    -fx-fill: #333;
+    -fx-cursor: hand
+}
+
+.header-title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333;
+}
+
+.contact-title {
+    -fx-font-size: 20px;
+}
+
+.contact-sub-title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #666;
+}
+
+.call-lbl-btn {
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: -base-color;
+    -fx-border-width: 1.7px;
+    -fx-border-style: solid;
+    -fx-cursor: hand
+}
+
+.call-icon {
+    -fx-fill: -base-color
+}
