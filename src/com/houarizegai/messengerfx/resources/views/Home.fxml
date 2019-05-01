@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kairos.layouts.RecyclerView?>
+
+<StackPane prefHeight="580.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.messengerfx.resources.views.Home">
+   <children>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <StackPane style="-fx-background-color: -base-color;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0" styleClass="field-search-container">
+                     <children>
+                        <OctIconView fill="#aaaaaa" glyphName="SEARCH" size="19">
+                           <HBox.margin>
+                              <Insets top="11.0" />
+                           </HBox.margin>
+                        </OctIconView>
+                        <JFXTextField prefHeight="35.0" promptText="Search" styleClass="field-search" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+            </StackPane>
+            <JFXTabPane VBox.vgrow="ALWAYS">
+               <tabs>
+                  <Tab>
+                     <content>
+                        <VBox>
+                           <children>
+                              <RecyclerView maxWidth="1.7976931348623157E308" prefHeight="300.0" />
+                              <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                 <children>
+                                    <MaterialDesignIconView fill="#11d01b" glyphName="ACCOUNT_CIRCLE" size="25" />
+                                    <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Active Now &gt;" textFill="#888888" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <RecyclerView maxHeight="-Infinity" minHeight="-Infinity" prefHeight="85.0" />
+                              <VBox maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="224.0" prefWidth="400.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="More Conversations" textFill="#888888">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <RecyclerView maxWidth="-Infinity" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" size="25" />
+                     </graphic>
+                  </Tab>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" size="25" />
+                     </graphic>
+                  </Tab>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" size="25" />
+                     </graphic>
+                  </Tab>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="FORMAT_LIST_BULLETED" size="25" text="" />
+                     </graphic>
+                  </Tab>
+                  <Tab>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" size="25" />
+                     </graphic>
+                  </Tab>
+               </tabs>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/material-color.css" />
+      <URL value="@../css/main.css" />
+      <URL value="@../css/home.css" />
+   </stylesheets>
+</StackPane>

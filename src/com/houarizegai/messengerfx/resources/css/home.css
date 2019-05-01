@@ -1,0 +1,35 @@
+.field-search-container {
+    -fx-padding: 5px 10px 10px 10px;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5;
+}
+
+.field-search {
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #AAA;
+    -jfx-unfocus-color: #AAA;
+    -jfx-focus-color: -base-color;
+}
+
+/* Start Tab pane */
+
+.jfx-tab-pane .tab {
+    -fx-pref-width: 64px;
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: -base-color;
+    -fx-cursor: hand;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: -base-color;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: #FFF;
+    -fx-stroke: #FFF;
+    -fx-stroke-width: 3pt;
+}
+
+/* End Tab pane */
