@@ -1,0 +1,10 @@
+.lbl-active-now {
+    -fx-font-size: 16px
+}
+
+.circle-active {
+    -fx-fill: #51c931;
+    -fx-border-color: #FFF;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
