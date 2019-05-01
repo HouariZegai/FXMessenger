@@ -1,0 +1,19 @@
+.circle-active {
+    -fx-fill: #51c931;
+    -fx-border-color: #FFF;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+
+.title {
+    -fx-font-size: 14px
+}
+
+.lbl-last-msg {
+    -fx-font-size: 12px;
+    -fx-text-fill: #999;
+}
+
+.lbl-date {
+    -fx-text-fill: #666;
+}

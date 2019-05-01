@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+
+<StackPane prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="20.0" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <StackPane>
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/profile/2.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="DODGERBLUE" radius="8.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" styleClass="circle-active" StackPane.alignment="BOTTOM_RIGHT">
+                     <StackPane.margin>
+                        <Insets bottom="5.0" />
+                     </StackPane.margin>
+                  </Circle>
+               </children>
+            </StackPane>
+            <VBox alignment="CENTER_LEFT" spacing="5.0">
+               <children>
+                  <Label styleClass="title" text="Houari ZEGAI" />
+                  <Label styleClass="lbl-last-msg" text="سلام عليكم ورحمة الله وبركاته" />
+               </children>
+            </VBox>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </HBox>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="5.0" StackPane.alignment="CENTER_RIGHT">
+         <children>
+            <Label styleClass="lbl-date" text="16:45" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/profile/1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../../css/material-color.css" />
+      <URL value="@../../css/main.css" />
+      <URL value="@../../css/cards/contact.css" />
+   </stylesheets>
+</StackPane>
