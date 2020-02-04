@@ -11,6 +11,14 @@
     -jfx-focus-color: -base-color;
 }
 
+.btn-circle {
+    -fx-background-color: -base-color;
+    -fx-pref-width: 55px;
+    -fx-pref-height: 55px;
+    -fx-background-radius: 50%;
+    -jfx-button-type: RAISED
+}
+
 /* Start Tab pane */
 
 .jfx-tab-pane .tab {

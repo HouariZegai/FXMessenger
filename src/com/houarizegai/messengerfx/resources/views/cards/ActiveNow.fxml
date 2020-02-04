@@ -3,22 +3,22 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="50.0" spacing="5.0" stylesheets="@../../css/cards/active-now.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" stylesheets="@../../css/cards/active-now.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Pane>
-            <children>
-                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+      <StackPane>
+         <children>
+                <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../images/profile/2.png" />
                     </image>
                 </ImageView>
-                <Circle fill="DODGERBLUE" layoutX="40.0" layoutY="38.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" styleClass="circle-active" />
-            </children>
-        </Pane>
+                <Circle fill="DODGERBLUE" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" styleClass="circle-active" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
         <Label text="Houari" />
     </children>
 </VBox>

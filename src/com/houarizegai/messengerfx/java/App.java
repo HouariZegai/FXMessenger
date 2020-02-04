@@ -15,7 +15,7 @@ public class App extends Application {
     public void start(Stage stage) {
         try {
             // get main views (fxml file)
-            Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/messengerfx/resources/views/Welcome.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/messengerfx/resources/views/Home.fxml"));
             // make icon for app
             stage.getIcons().add(new Image("/com/houarizegai/messengerfx/resources/images/icons/icon_app.png"));
             stage.setScene(new Scene(root));
