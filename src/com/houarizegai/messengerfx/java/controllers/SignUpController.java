@@ -1,6 +1,8 @@
 package com.houarizegai.messengerfx.java.controllers;
 
+import com.houarizegai.messengerfx.java.utils.FXTools;
 import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 public class SignUpController {
@@ -24,7 +26,7 @@ public class SignUpController {
     }
 
     @FXML
-    private void onBack() {
-
+    private void onBack(ActionEvent e) {
+        FXTools.changeView(e, getClass(), "SwitchAccount");
     }
 }

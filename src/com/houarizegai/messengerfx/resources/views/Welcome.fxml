@@ -20,7 +20,7 @@
             </ImageView>
             <VBox alignment="CENTER" maxWidth="-Infinity" prefWidth="255.0" spacing="15.0">
                <children>
-                  <Label prefWidth="148.0" styleClass="title" text="Welcome to Messenger" wrapText="true" />
+                  <Label styleClass="title" text="Welcome to Messenger" textAlignment="CENTER" wrapText="true" />
                   <Label styleClass="sub-title" text="Thanks for installing - let's get you set up!" textAlignment="CENTER" wrapText="true" />
                </children>
             </VBox>

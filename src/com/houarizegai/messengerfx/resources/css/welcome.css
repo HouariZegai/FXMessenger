@@ -1,3 +1,7 @@
+.title {
+    -fx-font-size: 24px;
+}
+
 .sub-title {
     -fx-font-size: 14px;
     -fx-text-fill: #888;

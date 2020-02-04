@@ -1,5 +1,7 @@
 package com.houarizegai.messengerfx.java.controllers;
 
+import com.houarizegai.messengerfx.java.utils.FXTools;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 public class WelcomeController {
@@ -10,7 +12,7 @@ public class WelcomeController {
     }
 
     @FXML
-    private void onSwitchAccount() {
-        System.out.println("Switch Account !");
+    private void onSwitchAccount(ActionEvent e) {
+        FXTools.changeView(e, getClass(), "SwitchAccount");
     }
 }
